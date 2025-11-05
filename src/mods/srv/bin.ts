@@ -19,7 +19,7 @@ const headers = new Headers({
   /**
    * Recommended to get immutable service worker, but suggested for everything else too
    */
-  "Cache-Control": process.env.NODE_ENV === "production" ? "public, max-age=31536000, immutable" : "no-cache",
+  "Cache-Control": process.env.NODE_ENV === "development" ? "no-cache" : "public, max-age=31536000, immutable",
 })
 
 /**
