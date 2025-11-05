@@ -23,7 +23,7 @@ npm install -g deno
 Clone this repository
 
 ```bash
-git clone https://github.com/hazae41/starter.git && cd ./starter && rm -rf ./.git && git init
+git clone https://github.com/brumeproject/www.git && cd ./starter && rm -rf ./.git && git init
 ```
 
 Install
