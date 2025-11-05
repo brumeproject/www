@@ -38,12 +38,6 @@ export const TechnologiesToHideYourselfInPlainSight = {
   da: "Teknologier for at skjule dig selv i almindelig syn",
 } satisfies Localized
 
-export function App() {
-  return <div className="text-2xl font-sans">
-    {delocalize(TechnologiesToHideYourselfInPlainSight)}
-  </div>
-}
-
 function timeout(delay: number) {
   return new Promise(ok => setTimeout(ok, delay))
 }
@@ -52,7 +46,7 @@ async function loop(callback: () => Promise<void>, signal: AbortSignal) {
   while (!signal.aborted) await callback()
 }
 
-export function Page() {
+export function App() {
   const [closed, setClosed] = useState(false)
 
   useEffect(() => {
