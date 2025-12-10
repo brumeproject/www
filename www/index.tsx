@@ -1,4 +1,10 @@
-import { delocalize, Localized } from "@/libs/locale/mod.ts";
+/// <reference lib="dom" />
+
+import "@hazae41/symbol-dispose-polyfill";
+
+import "@hazae41/disposable-stack-polyfill";
+
+import { delocalize, dir, lang, Locale, Localized } from "@/libs/locale/mod.ts";
 import { App } from "@/mods/app/mod.tsx";
 import { immutable } from "@hazae41/immutable";
 import { Rewind } from "@hazae41/rewind";
@@ -58,6 +64,11 @@ function Body() {
   const [client, setClient] = useState(false)
 
   useEffect(() => {
+    const locale = Locale.get()
+
+    document.documentElement.lang = lang[locale]
+    document.documentElement.dir = dir[locale]
+
     setClient(true)
   }, [])
 
@@ -65,7 +76,7 @@ function Body() {
     upgrade().then(console.log).catch(console.error)
   }, [])
 
-  if (!client && document.documentElement.lang === "null")
+  if (!client && document.documentElement.lang in lang === false)
     return null
 
   return <App />
@@ -78,7 +89,12 @@ if (process.env.PLATFORM === "browser") {
 } else {
   const params = new URLSearchParams(location.search)
 
-  document.documentElement.lang = params.get("locale")
+  const locale = params.get("locale") as Locale | null
+
+  if (locale != null) {
+    document.documentElement.lang = lang[locale]
+    document.documentElement.dir = dir[locale]
+  }
 
   const prerender = async (node: ReactNode) => {
     const ReactDOM = await import("react-dom/static")
