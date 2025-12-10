@@ -132,6 +132,7 @@ for (let offset = port; true; offset++) {
     break
   } catch {
     console.warn(`Could not bind to port ${offset}`)
+
     continue
   }
 }
