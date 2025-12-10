@@ -7,8 +7,8 @@
     "version": "deno -RW ./x.vsync.ts && git add deno.json",
     "prepare": "deno -RW ./x.dsync.ts && deno install",
     "prepack": "glace ./src/mods/www --out=./out && deno -RW ./x.compat.ts",
-    "produce": "glace ./src/mods/www --out=./out --watch=./src & deno -RNE ./src/mods/srv/bin.ts",
-    "develop": "glace ./src/mods/www --out=./out --dev --watch=./src & deno -RNE ./src/mods/srv/bin.ts --dev"
+    "produce": "glace ./src/mods/www --out=./out --watch=./src,./www & deno -RNE ./src/mods/srv/bin.ts",
+    "develop": "glace ./src/mods/www --out=./out --dev --watch=./src,./www & deno -RNE ./src/mods/srv/bin.ts --dev"
   },
   "files": [
     "./out"
