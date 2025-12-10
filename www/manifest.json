@@ -10,16 +10,10 @@
   "background_color": "#ffffff",
   "icons": [
     {
-      "src": "/maskicon.png",
+      "src": "/appicon.png",
       "sizes": "512x512",
       "type": "image/png",
-      "purpose": "maskable"
-    },
-    {
-      "src": "/favicon.png",
-      "sizes": "512x512",
-      "type": "image/png",
-      "purpose": "any"
+      "purpose": "any maskable"
     }
   ],
   "background": {
