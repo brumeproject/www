@@ -5,39 +5,6 @@ import * as ascii from "./ascii/mod.ts";
 
 React;
 
-export const TechnologiesToHideYourselfInPlainSight = {
-  en: "Technologies to hide yourself in plain sight",
-  zh: "在明处隐藏自己的技术",
-  hi: "सामने छुपने के लिए तकनीक",
-  es: "Tecnologías para esconderse a plena vista",
-  ar: "تقنيات لإخفاء نفسك في الوضوح",
-  fr: "Technologies pour vous cacher à la vue de tous",
-  de: "Technologien, um sich offen zu verstecken",
-  ru: "Технологии, чтобы скрыться на виду",
-  pt: "Tecnologias para se esconder à vista de todos",
-  ja: "目立たないように自分を隠すための技術",
-  pa: "ਸਾਫ ਦਿਖਾਈ ਵਿੱਚ ਆਪਣੇ ਆਪ ਨੂੰ ਛੁਪਾਉਣ ਲਈ ਤਕਨੀਕ",
-  bn: "প্রকাশে নিজেকে লুকানোর প্রযুক্তি",
-  id: "Teknologi untuk menyembunyikan diri di depan umum",
-  ur: "صاف دکھائی میں خود کو چھپانے کی تکنیک",
-  ms: "Teknologi untuk menyembunyikan diri di tempat terang",
-  it: "Tecnologie per nascondersi alla vista di tutti",
-  tr: "Açıkta kendini gizlemek için teknolojiler",
-  ta: "பொதுவாக மறைக்க தெரியும் தொழில்நுட்பங்கள்",
-  te: "ప్రకటనలో నిజాయితీకరించడానికి సాధనాలు",
-  ko: "눈에 띄지 않게 자신을 숨기는 기술",
-  vi: "Công nghệ để ẩn mình trong tầm nhìn",
-  pl: "Technologie, aby schować się na widoku",
-  ro: "Tehnologii pentru a te ascunde în plină vedere",
-  nl: "Technologieën om jezelf in het zicht te verbergen",
-  el: "Τεχνολογίες για να κρυφτείτε στην απλή όψη",
-  th: "เทคโนโลยีในการซ่อนตัวในที่สาธารณะ",
-  cs: "Technologie, jak se skrýt na očích",
-  hu: "Technológiák, hogy elrejtsd magad a szem elől",
-  sv: "Tekniker för att gömma sig i vanlig syn",
-  da: "Teknologier for at skjule dig selv i almindelig syn",
-} as const
-
 function timeout(delay: number) {
   return new Promise(ok => setTimeout(ok, delay))
 }
@@ -77,7 +44,38 @@ export function App() {
         </div>
         <div className="h-2 shrink-0" />
         <div className="text-default-contrast text-2xl">
-          {Lang.match(TechnologiesToHideYourselfInPlainSight)}
+          {Lang.match({
+            en: "Technologies to hide yourself in plain sight",
+            zh: "在明处隐藏自己的技术",
+            hi: "सामने छुपने के लिए तकनीक",
+            es: "Tecnologías para esconderse a plena vista",
+            ar: "تقنيات لإخفاء نفسك في الوضوح",
+            fr: "Technologies pour vous cacher à la vue de tous",
+            de: "Technologien, um sich offen zu verstecken",
+            ru: "Технологии, чтобы скрыться на виду",
+            pt: "Tecnologias para se esconder à vista de todos",
+            ja: "目立たないように自分を隠すための技術",
+            pa: "ਸਾਫ ਦਿਖਾਈ ਵਿੱਚ ਆਪਣੇ ਆਪ ਨੂੰ ਛੁਪਾਉਣ ਲਈ ਤਕਨੀਕ",
+            bn: "প্রকাশে নিজেকে লুকানোর প্রযুক্তি",
+            id: "Teknologi untuk menyembunyikan diri di depan umum",
+            ur: "صاف دکھائی میں خود کو چھپانے کی تکنیک",
+            ms: "Teknologi untuk menyembunyikan diri di tempat terang",
+            it: "Tecnologie per nascondersi alla vista di tutti",
+            tr: "Açıkta kendini gizlemek için teknolojiler",
+            ta: "பொதுவாக மறைக்க தெரியும் தொழில்நுட்பங்கள்",
+            te: "ప్రకటనలో నిజాయితీకరించడానికి సాధనాలు",
+            ko: "눈에 띄지 않게 자신을 숨기는 기술",
+            vi: "Công nghệ để ẩn mình trong tầm nhìn",
+            pl: "Technologie, aby schować się na widoku",
+            ro: "Tehnologii pentru a te ascunde în plină vedere",
+            nl: "Technologieën om jezelf in het zicht te verbergen",
+            el: "Τεχνολογίες για να κρυφτείτε στην απλή όψη",
+            th: "เทคโนโลยีในการซ่อนตัวในที่สาธารณะ",
+            cs: "Technologie, jak se skrýt na očích",
+            hu: "Technológiák, hogy elrejtsd magad a szem elől",
+            sv: "Tekniker för att gömma sig i vanlig syn",
+            da: "Teknologier for at skjule dig selv i almindelig syn",
+          })}
         </div>
         <div className="h-4 shrink-0" />
         <div className="flex flex-wrap gap-2">
@@ -87,6 +85,13 @@ export function App() {
             target="_blank"
             dir="ltr">
             Wallet
+          </AnchorChip>
+          <AnchorChip
+            href="https://bobine.tech"
+            rel="noreferrer"
+            target="_blank"
+            dir="ltr">
+            Bobine
           </AnchorChip>
           <AnchorChip
             href="https://dexscreener.com/ethereum/0xD0EbFe04Adb5Ef449Ec5874e450810501DC53ED5"
@@ -122,13 +127,6 @@ export function App() {
             target="_blank"
             dir="ltr">
             GitHub
-          </AnchorChip>
-          <AnchorChip
-            href="https://www.tldraw.com/s/v2_c_WZN9Q33cGQyF_RdbXqLUt"
-            rel="noreferrer"
-            target="_blank"
-            dir="ltr">
-            Tldraw
           </AnchorChip>
         </div>
       </div>
