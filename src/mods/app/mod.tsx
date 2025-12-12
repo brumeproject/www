@@ -87,13 +87,6 @@ export function App() {
             Wallet
           </AnchorChip>
           <AnchorChip
-            href="https://bobine.tech"
-            rel="noreferrer"
-            target="_blank"
-            dir="ltr">
-            Bobine
-          </AnchorChip>
-          <AnchorChip
             href="https://dexscreener.com/ethereum/0xD0EbFe04Adb5Ef449Ec5874e450810501DC53ED5"
             rel="noreferrer"
             target="_blank"
