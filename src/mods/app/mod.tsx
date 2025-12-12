@@ -30,15 +30,15 @@ export function App() {
   }, [])
 
   return <div className="p-safe h-full w-full flex flex-col overflow-y-scroll animate-opacity-in">
-    <div className="grow flex flex-col w-full m-auto max-w-6xl">
-      <div className="h-dvh flex flex-col p-8">
-        <div className="h-[max(24rem,100dvh-16rem)] flex flex-col justify-center items-center">
-          <div className="text-default-contrast whitespace-pre-wrap font-[monospace] text-[min(1vw,8px)] leading-[min(1vw,8px)]"
-            dir="ltr">
-            {closed ? ascii.closed : ascii.open}
-          </div>
+    <div className="grow flex flex-col w-full p-8">
+      <div className="grow flex flex-col justify-center items-center">
+        <div className="text-default-contrast whitespace-pre-wrap font-[monospace] text-[min(1vw,1vh)] leading-[min(1vw,1vh)]"
+          dir="ltr">
+          {closed ? ascii.closed : ascii.open}
         </div>
-        <div className="h-16 grow shrink-0" />
+      </div>
+      <div className="h-4 shrink-0" />
+      <div className="flex flex-col w-full max-w-6xl m-auto">
         <div className="font-medium text-6xl">
           Brume
         </div>
