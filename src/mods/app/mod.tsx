@@ -1,7 +1,7 @@
-import { AnchorChip } from "@/libs/anchors/mod.tsx";
-import { delocalize, Localized } from "@/libs/locale/mod.ts";
-import * as ascii from "@/mods/app/ascii/mod.ts";
 import React, { useEffect, useState } from "react";
+import { AnchorChip } from "../../libs/anchors/mod.tsx";
+import { Lang } from "../../libs/lang/mod.ts";
+import * as ascii from "./ascii/mod.ts";
 
 React;
 
@@ -36,7 +36,7 @@ export const TechnologiesToHideYourselfInPlainSight = {
   hu: "Technológiák, hogy elrejtsd magad a szem elől",
   sv: "Tekniker för att gömma sig i vanlig syn",
   da: "Teknologier for at skjule dig selv i almindelig syn",
-} satisfies Localized
+} as const
 
 function timeout(delay: number) {
   return new Promise(ok => setTimeout(ok, delay))
@@ -77,7 +77,7 @@ export function App() {
         </div>
         <div className="h-2 shrink-0" />
         <div className="text-default-contrast text-2xl">
-          {delocalize(TechnologiesToHideYourselfInPlainSight)}
+          {Lang.match(TechnologiesToHideYourselfInPlainSight)}
         </div>
         <div className="h-4 shrink-0" />
         <div className="flex flex-wrap gap-2">
