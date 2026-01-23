@@ -108,7 +108,7 @@ export function App() {
             Discord
           </AnchorChip>
           <AnchorChip
-            href="https://juicebox.money/v2/p/748?tabid=about"
+            href="https://juicebox.money/v5/eth:66?tabid=about"
             rel="noreferrer"
             target="_blank"
             dir="ltr">
