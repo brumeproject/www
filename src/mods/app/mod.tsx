@@ -94,7 +94,7 @@ export function App() {
             $BRUME
           </AnchorChip>
           <AnchorChip
-            href="https://x.com/BrumeProject"
+            href="https://x.com/i/communities/1687556820900999168"
             rel="noreferrer"
             target="_blank"
             dir="ltr">
