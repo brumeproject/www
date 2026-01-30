@@ -101,6 +101,13 @@ export function App() {
             $BRUME
           </AnchorChip>
           <AnchorChip
+            href="https://bags.fm/BnZnZe7dr59r9PrUZnwdhC9fEkD6UHnsZZur7xkyBAGS"
+            rel="noreferrer"
+            target="_blank"
+            dir="ltr">
+            $BRUME (BAGS)
+          </AnchorChip>
+          <AnchorChip
             href="https://x.com/i/communities/1687556820900999168"
             rel="noreferrer"
             target="_blank"
