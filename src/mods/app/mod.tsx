@@ -126,7 +126,7 @@ export function App() {
             rel="noreferrer"
             target="_blank"
             dir="ltr">
-            us@brume.tech
+            Email
           </AnchorChip>
         </div>
       </div>
