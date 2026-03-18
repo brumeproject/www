@@ -121,13 +121,6 @@ export function App() {
             dir="ltr">
             GitHub
           </AnchorChip>
-          <AnchorChip
-            href="mailto:us@brume.tech"
-            rel="noreferrer"
-            target="_blank"
-            dir="ltr">
-            Email
-          </AnchorChip>
         </div>
       </div>
     </div>
