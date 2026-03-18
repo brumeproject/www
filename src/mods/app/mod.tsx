@@ -80,18 +80,18 @@ export function App() {
         <div className="h-4 shrink-0" />
         <div className="flex flex-wrap gap-2">
           <AnchorChip
+            href="https://wallet.brume.tech"
+            rel="noreferrer"
+            target="_blank"
+            dir="ltr">
+            Wallet II
+          </AnchorChip>
+          <AnchorChip
             href="https://wallet.brume.money"
             rel="noreferrer"
             target="_blank"
             dir="ltr">
             Wallet
-          </AnchorChip>
-          <AnchorChip
-            href="https://beta.wallet.brume.tech"
-            rel="noreferrer"
-            target="_blank"
-            dir="ltr">
-            Wallet II
           </AnchorChip>
           <AnchorChip
             href="https://dexscreener.com/ethereum/0xD0EbFe04Adb5Ef449Ec5874e450810501DC53ED5"
@@ -105,7 +105,7 @@ export function App() {
             rel="noreferrer"
             target="_blank"
             dir="ltr">
-            $BRUME (BAGS)
+            BAGS
           </AnchorChip>
           <AnchorChip
             href="https://x.com/i/communities/1687556820900999168"
@@ -113,20 +113,6 @@ export function App() {
             target="_blank"
             dir="ltr">
             X.com
-          </AnchorChip>
-          <AnchorChip
-            href="https://discord.gg/KVEPWfN9jK"
-            rel="noreferrer"
-            target="_blank"
-            dir="ltr">
-            Discord
-          </AnchorChip>
-          <AnchorChip
-            href="https://juicebox.money/v5/eth:66?tabid=about"
-            rel="noreferrer"
-            target="_blank"
-            dir="ltr">
-            Juicebox
           </AnchorChip>
           <AnchorChip
             href="https://github.com/brumeproject"
