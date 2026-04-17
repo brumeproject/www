@@ -1,4 +1,4 @@
-// deno-lint-ignore-file no-process-global
+// deno-lint-ignore-file no-process-global no-unused-vars
 
 /// <reference lib="dom" />
 
